@@ -11,5 +11,14 @@
 
     <artifactId>child02</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.zdl</groupId>
+            <artifactId>child01</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
 
 </project>
