@@ -1,6 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: 数据库用户名
-    password: 数据库密码
+    username: root
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--    pojo中的实体类起别名-->
+    <typeAliases>
+        <!--单独制定别名-->
+        <!--        <typeAlias type="com.com.baidu.pojo.User" alias="user"></typeAlias>-->
+
+        <!--实体类首字母大写或者小写均可，例如：user User-->
+        <package name="com.baidu.domain"/>
+    </typeAliases>
+
+    <!--
+    <mappers>
+        <package name="com.baidu.dao"/>
+    </mappers>
+    -->
+</configuration>
