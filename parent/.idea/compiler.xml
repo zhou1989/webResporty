@@ -12,10 +12,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="child01" target="1.5" />
-      <module name="child02" target="1.5" />
-      <module name="child03" target="1.5" />
-      <module name="parent" target="1.5" />
+      <module name="child01" target="1.8" />
+      <module name="child02" target="1.8" />
+      <module name="child03" target="1.8" />
+      <module name="parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
