@@ -1,8 +1,18 @@
 spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
+  ds1:
+    datasource:
+      url: jdbc:mysql://localhost:3306/amlbst_fat?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis:
-  mapper-locations: classpath:mapper/*Mapper.xml
+  mapper-locations: classpath:mapper/ds1/*Mapper.xml
+
+  ds2:
+    datasource:
+      url: jdbc:mysql://localhost:3306/amlbht_fat?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/ds2/*Mapper.xml
