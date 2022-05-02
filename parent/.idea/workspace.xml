@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ebe5b50-4bc8-4d5a-a7b2-3ea57b5ed325" name="Default" comment="web框架学习实验平台">
+    <list default="true" id="1ebe5b50-4bc8-4d5a-a7b2-3ea57b5ed325" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,12 +42,10 @@
       <file leaf-file-name="ApplicationMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/child02/src/main/java/com/zdl/ApplicationMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="312">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#237#238#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -174,40 +172,6 @@
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="parent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="child02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="child02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="child02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="child02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parent" type="462c0819:PsiDirectoryNode" />
-              <item name="child02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -251,7 +215,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ApplicationMain">
-    <configuration name="ApplicationMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zdl.ApplicationMain" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/.." />
@@ -341,11 +305,6 @@
       <properties />
       <listeners />
     </configuration>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.ApplicationMain" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -409,11 +368,25 @@
       <option name="project" value="LOCAL" />
       <updated>1651475648414</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="web框架学习实验平台">
+      <created>1651488537512</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651488537512</updated>
+    </task>
+    <task id="LOCAL-00009" summary="web框架学习实验平台">
+      <created>1651488648738</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651488648738</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20821000" />
+    <option name="totallyTimeSpent" value="21377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -590,8 +563,6 @@
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -674,12 +645,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/child02/src/main/java/com/zdl/ApplicationMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="312">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
