@@ -1,15 +1,12 @@
-package com.zdl.controller;
+package com.zdl.api;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class IndexController {
+public interface FirstIndexApi {
     @ResponseBody
     @GetMapping("/firstPage")
-    public String firstPage(){
-        return "欢迎来到web学习测试平台";
-    }
-
+    public String firstPage();
 }
