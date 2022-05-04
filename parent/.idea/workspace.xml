@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ebe5b50-4bc8-4d5a-a7b2-3ea57b5ed325" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/parent_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/parent_war_exploded.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/child02/src/main/resources/application" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/child01/child01.iml" afterPath="$PROJECT_DIR$/child01/child01.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/child02/child02.iml" afterPath="$PROJECT_DIR$/child02/child02.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/child02/pom.xml" afterPath="$PROJECT_DIR$/child02/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/child02/src/main/java/com/zdl/ApplicationMain.java" afterPath="$PROJECT_DIR$/child02/src/main/java/com/zdl/ApplicationMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/child02/src/main/java/com/zdl/service/serviceimpl/TestProssServiceImpl.java" afterPath="$PROJECT_DIR$/child02/src/main/java/com/zdl/service/serviceimpl/TestProssServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/child03/child03.iml" afterPath="$PROJECT_DIR$/child03/child03.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parent.iml" afterPath="$PROJECT_DIR$/parent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/child01/src/main/java/com/zdl/po/ApiBlkEacBalGen.java" afterPath="$PROJECT_DIR$/child01/src/main/java/com/zdl/po/ds1/ApiBlkEacBalGen.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/child02/src/main/java/com/zdl/mapper/ApiBlkEacBalMapper.java" afterPath="$PROJECT_DIR$/child02/src/main/java/com/zdl/mapper/ds1/ApiBlkEacBalMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/child02/src/main/resources/mapper/ApiBlkEacBalMapper.xml" afterPath="$PROJECT_DIR$/child02/src/main/resources/mapper/ds1/ApiBlkEacBalMapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/child02/src/main/resources/mapper/mybatis-config.xml" afterPath="$PROJECT_DIR$/child02/src/main/resources/mybatis-config.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -432,7 +415,7 @@
       <workItem from="1651417883190" duration="12998000" />
       <workItem from="1651465496992" duration="7683000" />
       <workItem from="1651493489901" duration="34857000" />
-      <workItem from="1651584960055" duration="25294000" />
+      <workItem from="1651584960055" duration="25307000" />
     </task>
     <task id="LOCAL-00001" summary="web框架学习实验平台">
       <created>1651418345958</created>
@@ -574,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1651632617238</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="web框架学习实验平台">
+      <created>1651656274430</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1651656274430</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83652000" />
+    <option name="totallyTimeSpent" value="83665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
