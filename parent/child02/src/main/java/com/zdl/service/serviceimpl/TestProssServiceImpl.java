@@ -1,8 +1,7 @@
 package com.zdl.service.serviceimpl;
 
-import com.zdl.mapper.ApiBlkEacBalMapper;
+import com.zdl.mapper.ds1.ApiBlkEacBalMapper;
 import com.zdl.service.TestProssService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

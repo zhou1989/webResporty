@@ -1,4 +1,4 @@
-package com.zdl.po;
+package com.zdl.po.ds1;
 
 import lombok.Data;
 
