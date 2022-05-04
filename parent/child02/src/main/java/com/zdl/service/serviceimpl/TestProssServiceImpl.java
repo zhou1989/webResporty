@@ -1,7 +1,8 @@
 package com.zdl.service.serviceimpl;
 
-import com.zdl.mapper.ds1.TestProssMapper;
+import com.zdl.mapper.ApiBlkEacBalMapper;
 import com.zdl.service.TestProssService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -10,11 +11,11 @@ import javax.annotation.Resource;
 public class TestProssServiceImpl implements TestProssService {
 
     @Resource
-    TestProssMapper testProssMapper;
+    ApiBlkEacBalMapper apiBlkEacBalMapper;
 
     @Override
-    public int insertTestData() {
-        int n =testProssMapper.insertTestData();
-        return n;
+    public void insertTestData() {
+        apiBlkEacBalMapper.insertTestData();
+        System.out.print("ooncjnkzxj");
     }
 }
