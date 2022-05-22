@@ -1,0 +1,91 @@
+spring:
+  # druid数据源配置
+  datasource:
+    name: druidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    druid:
+      cloud:
+        url: jdbc:mysql://192.168.16.100:9090/member?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+        username: sa
+        password: sa
+      yaodian:
+        url: jdbc:mysql://192.168.16.100:9090/yaodian?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+        username: sa
+        password: sa
+      filters: stat,wall,config
+      max-active: 100
+      initial-size: 1
+      max-wait: 60000
+      min-idle: 1
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 50
+      max-pool-prepared-statement-per-connection-size: 20
+      web-stat-filter:
+        # 添加过滤规则
+        url-pattern: /*
+        # 忽略过滤格式
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+      stat-view-servlet:
+        # 是否可以重置数据
+        reset-enable: false
+        # 开启druid监控页面
+        enabled: true
+
+  # 静态资料访问方式
+  mvc:
+    static-path-pattern: /static/**
+
+  # thymeleaf 模块配置
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: utf-8
+    # 关闭页面缓存
+    cache: false
+    servlet:
+      content-type: text/html
+
+  # redis配置
+  redis:
+    # Redis数据库索引
+    database: 0
+    # Redis服务器地址
+    host: localhost
+    port: 6379
+    password:
+    jedis:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#        max-wait: -1
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0
+    # 连接超时时间（毫秒）
+    timeout: 10000s
+  session:
+    store-type: redis
+
+
+# cloud自定义配置
+cloud:
+  # 登录验证码是否开启，开发环境配置false方便测试
+  login:
+    authcode:
+      enable: false
+  # quartz开关
+  quartz:
+    enable: true
+  # 缓存开关
+  cache:
+    enable: false
