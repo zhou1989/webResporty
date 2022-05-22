@@ -22,19 +22,19 @@ public class Ds1Config {
     static final String PACKAGE = "com.zdl.mapper.ds1";
     static final String MAPPER_LOCATION = "classpath:mapper/ds1/*Mapper.xml";
 
-    @Value("${spring.datasource.ds1.url}")
+    @Value("${spring.datasource.druid.ds1.url}")
     private String url;
 
-    @Value("${spring.datasource.ds1.username}")
+    @Value("${spring.datasource.druid.ds1.username}")
     private String user;
 
-    @Value("${spring.datasource.ds1.password}")
+    @Value("${spring.datasource.druid.ds1.password}")
     private String password;
 
-    @Value("${spring.datasource.ds1.driver-class-name}")
+    @Value("${spring.datasource.driverClassName}")
     private String driverClass;
 
-    @Value("${spring.datasource.ds1.type}")
+    @Value("${spring.datasource.type}")
     private String type;
 
 
@@ -57,9 +57,9 @@ public class Ds1Config {
     }
 
 
-    @Bean(name = "masterSqlSessionFactory")
+    @Bean(name = "ds1SqlSessionFactory")
     @Primary
-    public SqlSessionFactory masterSqlSessionFactory(@Qualifier("ds1DataSource") DataSource ds1DataSource)
+    public SqlSessionFactory ds1SqlSessionFactory(@Qualifier("ds1DataSource") DataSource ds1DataSource)
             throws Exception {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(ds1DataSource);

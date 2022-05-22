@@ -15,25 +15,25 @@ import javax.sql.DataSource;
 
 @Configuration
 // 扫描 Mapper 接口并容器管理
-@MapperScan(basePackages = Ds2DataSourceConfig.PACKAGE, sqlSessionFactoryRef = "ds2SqlSessionFactory")
-public class Ds2DataSourceConfig {
+@MapperScan(basePackages = Ds2Config.PACKAGE, sqlSessionFactoryRef = "ds2SqlSessionFactory")
+public class Ds2Config {
     // 精确到 cluster 目录，以便跟其他数据源隔离
     static final String PACKAGE = "com.zdl.mapper.ds2";
     static final String MAPPER_LOCATION = "classpath:mapper/ds2/*Mapper.xml";
 
-    @Value("${spring.datasource.ds2.url}")
+    @Value("${spring.datasource.druid.ds2.url}")
     private String url;
 
-    @Value("${spring.datasource.ds2.username}")
+    @Value("${spring.datasource.druid.ds2.username}")
     private String user;
 
-    @Value("${spring.datasource.ds2.password}")
+    @Value("${spring.datasource.druid.ds2.password}")
     private String password;
 
-    @Value("${spring.datasource.ds2.driver-class-name}")
+    @Value("${spring.datasource.driverClassName}")
     private String driverClass;
 
-    @Value("${spring.datasource.ds2.type}")
+    @Value("${spring.datasource.type}")
     private String type;
 
     @Bean(name = "ds2DataSource")
@@ -48,17 +48,17 @@ public class Ds2DataSourceConfig {
     }
 
     @Bean(name = "ds2TransactionManager")
-    public DataSourceTransactionManager clusterTransactionManager() {
+    public DataSourceTransactionManager ds2TransactionManager() {
         return new DataSourceTransactionManager(ds2DataSource());
     }
 
     @Bean(name = "ds2SqlSessionFactory")
-    public SqlSessionFactory clusterSqlSessionFactory(@Qualifier("ds2DataSource") DataSource ds2DataSource)
+    public SqlSessionFactory ds2SqlSessionFactory(@Qualifier("ds2DataSource") DataSource ds2DataSource)
             throws Exception {
         final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
         sessionFactory.setDataSource(ds2DataSource);
         sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver()
-                .getResources(Ds2DataSourceConfig.MAPPER_LOCATION));
+                .getResources(Ds2Config.MAPPER_LOCATION));
         return sessionFactory.getObject();
     }
 }

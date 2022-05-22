@@ -1,12 +1,15 @@
 package com.zdl;
 
 
+import com.zdl.datasource.Ds1Config;
+import com.zdl.datasource.Ds2Config;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.Import;
 import org.springframework.core.env.Environment;
 
 /**
@@ -17,7 +20,7 @@ import org.springframework.core.env.Environment;
 @EnableAutoConfiguration
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class},scanBasePackages ={"com.zdl.service.*","com.zdl.controller","com.zdl.mapper.*"})
 @MapperScan(basePackages ={"com.zdl.mapper.*"})
-//@Import({DynamicDataSourceConfig.class}) // 注册动态多数据源
+@Import({Ds1Config.class, Ds2Config.class}) // 注册动态多数据源
 public class ApplicationMain {
 
     @Autowired
