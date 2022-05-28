@@ -1,4 +1,4 @@
-package com.zdl.test;
+package com.zdl.test.com.pojo;
 
 public class RealSubject implements Subject {
     /**
