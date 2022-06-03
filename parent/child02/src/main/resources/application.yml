@@ -7,13 +7,13 @@ spring:
   # 使用环境
 #    profiles:
 #      active: dev
-#    session:
-#      timeout: 3600000000s
-    #日期配置
-#    jackson:
-#      date-format: yyyy/MM/dd HH:mm:ss
-#      time-zone: GMT+8
-#      default-property-inclusion: non_null
+  session:
+    timeout: 3600000000s
+  #日期配置
+  jackson:
+    date-format: yyyy/MM/dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
 #    main:
 #      allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
 
@@ -57,40 +57,41 @@ spring:
           url: jdbc:mysql://localhost:3306/amlbst_fat?useUnicode=true&characterEncoding=UTF-8&useSSL=false
           username: root
           password: root
-#          mybatis:
-#                mapperLocations: classpath:mapper/ds1/*Mapper.xml
-#                configLocation: classpath:mapper/ds2/mybatis-config.xml
+          mybatis:
+            mapperLocations: classpath:mapper/ds1/*Mapper.xml
+            configLocation: classpath:mapper/ds1/mybatis-config.xml
         ds2:
           url: jdbc:mysql://localhost:3306/amlbht_fat?useUnicode=true&characterEncoding=UTF-8&useSSL=false
           username: root
           password: root
-        filters: stat,wall,config
-        max-active: 100
-        initial-size: 1
-        max-wait: 60000
-        min-idle: 1
-        time-between-eviction-runs-millis: 60000
-        min-evictable-idle-time-millis: 300000
-        validation-query: select 'x'
-        test-while-idle: true
-        test-on-borrow: false
-        test-on-return: false
-        pool-prepared-statements: true
-        max-open-prepared-statements: 50
-        max-pool-prepared-statement-per-connection-size: 20
-        web-stat-filter:
-          # 添加过滤规则
-          url-pattern: /*
-          # 忽略过滤格式
-          exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
-        stat-view-servlet:
-          # 是否可以重置数据
-          reset-enable: false
-          # 开启druid监控页面
-          enabled: true
-#        mybatis:
-#                mapperLocations: classpath:mapper/ds2/*Mapper.xml
-#                configLocation: classpath:mapper/ds2/mybatis-config.xml
+          mybatis:
+            mapperLocations: classpath:mapper/ds2/*Mapper.xml
+            configLocation: classpath:mapper/ds2/mybatis-config.xml
+      filters: stat,wall,config
+      max-active: 100
+      initial-size: 1
+      max-wait: 60000
+      min-idle: 1
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 50
+      max-pool-prepared-statement-per-connection-size: 20
+  web-stat-filter:
+    # 添加过滤规则
+    url-pattern: /*
+    # 忽略过滤格式
+    exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+  stat-view-servlet:
+    # 是否可以重置数据
+    reset-enable: false
+    # 开启druid监控页面
+    enabled: true
+
 
     # 静态资料访问方式
 #    mvc:
